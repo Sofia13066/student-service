@@ -5,6 +5,6 @@ import lombok.Getter;
 @Getter
 public class StudentUpdateDto {
 
-    Integer id;
     String name;
+    String password;
 }

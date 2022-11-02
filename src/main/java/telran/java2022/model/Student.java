@@ -5,9 +5,11 @@ import java.util.Map;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
+@NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Student {
     Integer id;
@@ -17,7 +19,7 @@ public class Student {
     String password;
     Map<String, Integer> scores;
     
-    public Student(Integer id, String name, String password, Map<String, Integer> scores) {
+    public Student(Integer id, String name, String password) {
         this.id = id;
         this.name = name;
         this.password = password;
